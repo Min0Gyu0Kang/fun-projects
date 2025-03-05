@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내려갑니다</title>
+</head>
+<body>
+    <h4>버튼을 눌러 젊어지기!</h4>
+    <!-- initial value is 100 -->
+    <h1 id="valueDisplay">100살</h1>
+    <button onclick="younger()">젊어진다</button> 
+    <button onclick="Return()" id="home">집으로</button>
+    
+    <script>
+        function younger() {
+            // Get the current value from the h1 element
+            var val = parseInt(document.getElementById('valueDisplay').innerText);
+            
+            // Decrease the value by 5
+            val -= 5;
+
+            // Update the displayed value
+            document.getElementById('valueDisplay').innerText = val+'살';
+
+            // Check if the value is less than or equal to 25
+            if (val <= 25) {
+                // Display a message
+                var messageElement = document.createElement('h3');
+                messageElement.innerText = '거기서 더 젊어지고 싶은 마음은 알겠지만 현실을 보자';
+
+                // Remove the button
+                var buttonElement = document.querySelector('button');
+                buttonElement.parentNode.removeChild(buttonElement);
+
+                // Append the message to the body
+                document.body.appendChild(messageElement);
+            }
+        }
+        function Return() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

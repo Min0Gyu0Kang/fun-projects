@@ -1,0 +1,20 @@
+Proposal Example
+▪ Introduction
+▪ Goal
+▪ Ideas
+▪ Plan (schedule)
+
+Your ppt should include topic, code
+structure (class diagram), demo and
+student’s role.
+
+There are 8 criteria.
+• Using GUI (1~5)
+• Using Networking(socket) (1~5)
+• Using Multi threading (1~5)
+• Creativity (1~5)
+• Usefulness (1~5)
+• Difficulty (1~5)
+• Completeness (1~5)
+• Readability (1~5)
+/40
