@@ -3,8 +3,8 @@
 
 Features:
 
-Add Background Image
-Add Character Image
+- Add Background Image
+- Add Character Image
 
 Goal:
 Run DB on Springboot-based MySQL or any other DBMS 
